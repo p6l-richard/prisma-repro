@@ -1,6 +1,6 @@
 import NextAuth from "next-auth";
 import { authConfig as authEdgeConfig } from "./config.edge";
-import { cache } from "react";
+// import { cache } from "react";
 
 import { PrismaAdapter } from "@auth/prisma-adapter"
 import { db } from "@/prisma/client";
