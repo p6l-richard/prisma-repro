@@ -10,7 +10,7 @@
     "@auth/prisma-adapter": "^2.2.0",
     "@libsql/client": "^0.6.2",
     "@prisma/adapter-libsql": "^5.14.0",
-    "@prisma/client": "^5.14.0",
+    "@prisma/client": "^5.15.0",
     "next": "latest",
     "next-auth": "^5.0.0-beta.4",
     "react": "latest",
@@ -23,7 +23,7 @@
     "@types/react-dom": "latest",
     "bun": "^1.1.12",
     "dotenv": "^16.4.5",
-    "prisma": "^5.14.0",
+    "prisma": "^5.15.0",
     "typescript": "latest"
   }
 }
