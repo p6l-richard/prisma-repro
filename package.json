@@ -4,7 +4,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "": "bun run setup.ts"
+    "turso": "bun run setup.ts"
   },
   "dependencies": {
     "@auth/prisma-adapter": "^2.2.0",
