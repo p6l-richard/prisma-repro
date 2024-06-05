@@ -1,6 +1,7 @@
 import { createClient } from "@libsql/client";
 import { PrismaLibSQL } from "@prisma/adapter-libsql";
 import { PrismaClient } from "@prisma/client";
+import { withOptimize } from "@prisma/extension-optimize";
 
 if (!process.env.TURSO_DATABASE_URL && !process.env.TURSO_AUTH_TOKEN) {
   throw new Error("TURSO_DATABASE_URL and TURSO_AUTH_TOKEN must be set in the environment. You can run `pnpm turso` to the this up for you.");
@@ -17,7 +18,7 @@ const createPrismaClient = () =>
   new PrismaClient({
     adapter,
     log: process.env.NODE_ENV === "development" ? ["query", "error", "warn"] : ["error"],
-  });
+  }).$extends(withOptimize());
 
 const globalForPrisma = globalThis as unknown as {
   prisma: ReturnType<typeof createPrismaClient> | undefined;

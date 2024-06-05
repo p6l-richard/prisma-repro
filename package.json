@@ -17,6 +17,7 @@
     "react-dom": "latest"
   },
   "devDependencies": {
+    "@prisma/extension-optimize": "^0.8.0",
     "@types/bun": "^1.1.3",
     "@types/node": "latest",
     "@types/react": "latest",

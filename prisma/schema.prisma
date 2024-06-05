@@ -1,7 +1,7 @@
 generator client {
     provider        = "prisma-client-js"
     // This enables turso usage
-    previewFeatures = ["driverAdapters"]
+    previewFeatures = ["driverAdapters", "tracing"]
 }
 
 datasource db {
